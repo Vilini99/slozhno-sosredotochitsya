@@ -1,8 +1,239 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-min-inline-size: 375px;
-color: var(--text-color);
-font-family: var(--font);
-background-color: var(--bg-color);
+  color: var(--text-color, rgba(241, 178, 206, 1));
+  font-family: var(--font, 'IBM Plex Mono');
+  background-color: var(--bg-color, rgba(0, 0, 40, 1));
+  min-width: 375px;
+  padding: 10px;
+
+background-position: center;
+background-attachment: fixed;
+}
+
+.page.theme_dark {
+    background-image: url(/images/cover-image-dark.png);
+}
+
+.page.theme_light {
+    background-image: url(/images/cover-image-light.png);
+}
+
+.header {
+  position: relative;
+}
+
+.header::before {
+  content: '';
+  display: block;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 2px solid rgba(255, 0, 112, 1);
+  border-left: 0;
+  border-bottom: 0;
+}
+
+.decorated-zone {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 40.5px;
+  justify-content: end;
+  margin-bottom: 65px;
+}
+
+.header__theme-menu-list {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 10px;
+  list-style: none;
+}
+
+.header__theme-menu-button_active {
+    pointer-events: none;
+}
+
+.rec {
+  text-transform: uppercase;
+}
+
+.mark {
+  position: relative;
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+}
+
+.mark::before {
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background: #ff0070;
+  box-shadow: 0px 0px 4px 2px #ff0070;
+}
+
+.header__theme-menu-button {
+  background: transparent;
+  color: rgba(255, 0, 112, 1);
+  font-family: 'IBM Plex Mono';
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: lowercase;
+  border: 0;
+  outline: none;
+}
+
+.header__theme-menu-button:hover {
+    border: 1px solid;
+}
+
+.header__theme-menu-button:focus-visible {
+    border-bottom: 1px solid;
+}
+
+button:hover {
+  border: 1px solid rgba(50, 49, 45, 0.4);
+}
+
+h1.title {
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 82.5%;
+  color: rgba(219, 0, 255, 1);
+  padding-bottom: 55px;
+}
+
+.content__title-image {
+  font-size: 18px;
+  line-height: 23px;
+  color: #000028;
+  margin-bottom: 10px;
+}
+
+.content__image img {
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  padding-bottom: 30px;
+}
+
+.sub-title {
+  padding-bottom: 50px;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000028;
+  position: relative;
+}
+
+.sub-title::before {
+  content: '';
+  display: block;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border: 2px solid rgba(255, 0, 112, 1);
+  border-right: 0;
+  border-top: 0;
+}
+
+.content {
+  margin-bottom: 50px;
+}
+
+.content__title {
+  font-size: 18px;
+  line-height: 23px;
+  color: #ff0070;
+  padding-bottom: 20px;
+}
+
+.content__subtitle {
+  font-size: 18px;
+  line-height: 23px;
+  color: #000028;
+  margin-bottom: 10px;
+}
+
+.content__text {
+  font-size: 18px;
+  line-height: 23px;
+  padding-bottom: 20px;
+}
+
+.slogan {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000028;
+}
+
+.footer__text {
+  font-size: 116px;
+  line-height: 82.5%;
+  color: #db00ff;
+  text-shadow: 2px 2px 0px #ff0070;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  position: relative;
+  padding: 285px 0;
+}
+
+footer::after {
+  content: '';
+  display: block;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 2px solid rgba(255, 0, 112, 1);
+  border-left: 0;
+  border-bottom: 0;
+}
+
+footer::before {
+  content: '';
+  display: block;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border: 2px solid rgba(255, 0, 112, 1);
+  border-right: 0;
+  border-top: 0;
+}
+
+.title-decor {
+  background: #ff0070;
+}
+
+.navbar-container {
+    display: grid;
+    justify-content: end;
+}
+
+.link {
+    text-shadow: 1px 1px 0 var(--accent-color);
+    text-decoration: none;
+    outline: none;
+}
+
+.link:hover {
+    border-bottom: 1px solid;
+}
+
+.link:focus-visible {
+    border: 1px solid;
 }
