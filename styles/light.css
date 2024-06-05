@@ -8,25 +8,35 @@
   --font: 'IBM Plex mono';
   --bg-color: rgba(255, 241, 247, 1);
   --text-color: rgba(53, 52, 48, 1);
-  --accent-color: rgba(255, 141, 203, 1); 
+  --accent-color: rgba(255, 141, 203, 1);
+  --title-color: rgba(255, 194, 230, 1);
+  --title-shadow-color: rgba(255, 0, 112, 1);
 }
 
 :root.theme-light {
   --font: 'IBM Plex mono';
   --bg-color: rgba(255, 241, 247, 1);
   --text-color: rgba(53, 52, 48, 1);
-  --accent-color: rgba(255, 141, 203, 1); 
+  --accent-color: rgba(255, 141, 203, 1);
+  --title-color: rgba(255, 194, 230, 1);
+  --title-shadow-color: rgba(255, 0, 112, 1);
+}
+
+.page.theme_light .rec-mark {
+  display: none;
 }
 
 /* Остальные стили */
 
 @media (prefers-color-scheme: light) {
-:root {
-  --font: 'IBM Plex mono';
-  --bg-color: rgba(255, 241, 247, 1);
-  --text-color: rgba(53, 52, 48, 1);
-  --accent-color: rgba(255, 141, 203, 1); 
+  :root {
+    --font: 'IBM Plex mono';
+    --bg-color: rgba(255, 241, 247, 1);
+    --text-color: rgba(53, 52, 48, 1);
+    --accent-color: rgba(255, 141, 203, 1);
+    --title-color: rgba(255, 194, 230, 1);
+    --title-shadow-color: rgba(255, 0, 112, 1);
   }
 }
 
-/* Остальные стили */ 
+/* Остальные стили */
