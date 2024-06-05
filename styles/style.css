@@ -411,16 +411,20 @@ footer::before {
     grid-column: 2;
     grid-row: 3;
   }
+
   .food-block__text {
     grid-column: 2;
   }
+
   .gadgets-block {
     grid-column: 3;
     grid-row: 3;
   }
+
   .gadgets-block__text {
     grid-column: 3;
   }
+
   .content__title-image {
     margin-bottom: 24px;
   }
