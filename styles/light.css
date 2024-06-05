@@ -23,7 +23,7 @@
 }
 
 .page.theme_light .rec-mark {
-  display: none;
+  visibility: hidden;
 }
 
 /* Остальные стили */
@@ -36,6 +36,10 @@
     --accent-color: rgba(255, 141, 203, 1);
     --title-color: rgba(255, 194, 230, 1);
     --title-shadow-color: rgba(255, 0, 112, 1);
+  }
+
+  .page.theme_light .rec-mark {
+    visibility: hidden;
   }
 }
 

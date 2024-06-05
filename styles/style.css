@@ -21,6 +21,7 @@
 .header {
   position: relative;
   margin-bottom: 52px;
+  height: 100vh;
 }
 
 .header::after {
@@ -184,6 +185,7 @@ h1.title {
 footer {
   position: relative;
   padding: 285px 0;
+  height: 100vh;
 }
 
 footer::after {
@@ -239,6 +241,8 @@ footer::before {
 @media (width >= 768px) {
   .navbar-container {
     row-gap: 165px;
+    grid-column: 1/3;
+    row-gap: 156px;
   }
 
   .decorated-zone {
@@ -246,12 +250,7 @@ footer::before {
     grid-template-rows: repeat(3, 1fr);
   }
 
-  .navbar-container {
-    grid-column: 1/3;
-    row-gap: 156px;
-  }
-
-  h1.title {
+   h1.title {
     grid-column: 1/3;
     padding: 0;
     align-self: end;
@@ -339,7 +338,6 @@ footer::before {
 
   footer {
     margin-top: 80px;
-    min-height: 985px;
     min-height: 985px;
     display: flex;
     justify-content: center;
