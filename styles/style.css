@@ -5,9 +5,12 @@
   font-family: var(--font, 'IBM Plex mono');
   background-color: var(--bg-color, rgba(0, 0, 40, 1));
   min-width: 375px;
-  padding: 10px;
   background-position: center;
   background-attachment: fixed;
+}
+
+.page__inner {
+  padding: 10px;
 }
 
 .page.theme_dark {
@@ -20,8 +23,9 @@
 
 .header {
   position: relative;
-  margin-bottom: 52px;
-  height: 100vh;
+  margin-bottom: 46px;
+  height: 97vh;
+  grid-template-rows: 172px 303px 115px;
 }
 
 .header::after {
@@ -107,8 +111,7 @@ h1.title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
   color: var(--title-color);
-  padding-top: 70px;
-  padding-bottom: 57px;
+    align-self: center;
 }
 
 .content__title-image {
@@ -123,12 +126,7 @@ h1.title {
   width: 100%;
 }
 
-.title {
-  padding-bottom: 30px;
-}
-
 .sub-title {
-  padding-bottom: 56px;
   font-size: 18px;
   line-height: 23px;
   color: #000028;
@@ -197,7 +195,7 @@ h1.title {
 
 footer {
   position: relative;
-  height: 100vh;
+  height: 97vh;
   align-items: center;
   display: grid;
   justify-content: center;
@@ -237,7 +235,7 @@ footer::before {
 .navbar-container {
   display: grid;
   justify-content: end;
-  row-gap: 45px;
+  row-gap: 32px;
 }
 
 .link {
