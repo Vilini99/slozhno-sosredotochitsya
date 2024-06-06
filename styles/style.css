@@ -386,7 +386,7 @@ footer::before {
     justify-content: center;
     align-items: center;
   }
-  
+
   .footer__text {
     padding-top: 7px;
   }
@@ -400,6 +400,8 @@ footer::before {
   .header {
     row-gap: 31px;
     padding-bottom: 70px;
+    grid-template-rows: 350px 50px 194px;
+    min-height: 100vh;
   }
 
   .navbar-container {
@@ -414,12 +416,14 @@ footer::before {
 
   .header__theme-menu-list {
     grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
   }
 
   .header__theme-menu {
     grid-column: 1;
     grid-row: 1;
     justify-self: center;
+    width: auto;
   }
 
   h1.title {
@@ -477,7 +481,7 @@ footer::before {
   }
 
   .content__title-image {
-    margin-bottom: 24px;
+    margin-bottom: 17px;
   }
 
   .content__image {
@@ -485,11 +489,20 @@ footer::before {
   }
 
   footer {
-    min-height: 730px;
+    min-height: 100vh;
+  }
+
+  .section-pictures {
+    margin-bottom: 23px;
   }
 
   .footer__text {
     font-weight: 700;
     font-size: 157px;
+    padding: 0 0 18px;
+  }
+
+  footer::before {
+    bottom: 30px;
   }
 }
