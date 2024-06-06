@@ -339,10 +339,6 @@ footer::before {
     grid-column: 2/4;
   }
 
-  .page {
-    margin: 10px;
-  }
-
   .header {
     row-gap: 17px;
     padding-bottom: 163px;
