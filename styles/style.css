@@ -338,13 +338,13 @@ footer::before {
   .header {
     row-gap: 12px;
     padding-bottom: 163px;
-    margin: 20px 20px 80px;
+    margin: 20px 20px 40px;
     grid-template-rows: 281px 252px 263px;
     grid-template-columns: 1fr 1fr;
   }
 
   .header::before {
-    bottom: 0;
+    bottom: 40px;
   }
 
   .main {
