@@ -76,7 +76,7 @@
 
 .header__theme-menu-button {
   background: transparent;
-  color: rgba(255, 0, 112, 1);
+  color: var(--text-color);
   font-family: 'IBM Plex mono', monospace;
   font-size: 18px;
   line-height: 18px;
@@ -86,17 +86,14 @@
   padding: 0;
 }
 
-.header__theme-menu-button:hover {
-  border: 1px solid;
-}
-
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid;
+  border-bottom: 1px solid var(--button-focus-underline);
   outline: none;
 }
 
 button:hover {
   border: 1px solid rgba(50, 49, 45, 0.4);
+  cursor: pointer;
 }
 
 .title {
@@ -161,6 +158,10 @@ button:hover {
   line-height: 23px;
   color: #000028;
   margin-bottom: 15px;
+}
+
+.subtitle-advices {
+  font-weight: 400;
 }
 
 .content__text {

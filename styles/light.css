@@ -11,6 +11,7 @@
   --accent-color: rgba(255, 141, 203, 1);
   --title-color: rgba(255, 194, 230, 1);
   --title-shadow-color: rgba(255, 0, 112, 1);
+  --button-focus-underline: rgba(53, 52, 48, 1);
 }
 
 :root.theme-light {
@@ -20,9 +21,10 @@
   --accent-color: rgba(255, 141, 203, 1);
   --title-color: rgba(255, 194, 230, 1);
   --title-shadow-color: rgba(255, 0, 112, 1);
+  --button-focus-underline: rgba(53, 52, 48, 1);
 }
 
-.page.theme_light .rec-mark {
+.page.theme_light .rec {
   visibility: hidden;
 }
 
@@ -42,7 +44,7 @@
     --title-shadow-color: rgba(255, 0, 112, 1);
   }
 
-  .page.theme_light .rec-mark {
+  .page.theme_auto .rec {
     visibility: hidden;
   }
 }
