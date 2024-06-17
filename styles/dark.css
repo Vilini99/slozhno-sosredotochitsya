@@ -21,3 +21,7 @@
   --title-color: rgba(219, 0, 255, 1);
   --title-shadow-color: rgba(255, 0, 112, 1);
 }
+
+.page.theme_dark {
+  background-image: url(/images/cover-image-dark.png);
+}
