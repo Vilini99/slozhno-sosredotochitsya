@@ -11,7 +11,7 @@
   --accent-color: rgba(255, 0, 112, 1);
   --title-color: rgba(219, 0, 255, 1);
   --title-shadow-color: rgba(255, 0, 112, 1);
-  --button-focus-underline: rgba(255, 0, 112, 1);
+  --button-color: rgba(255, 0, 112, 1);
 }
 
 :root.theme-dark {
@@ -21,7 +21,7 @@
   --accent-color: rgba(255, 0, 112, 1);
   --title-color: rgba(219, 0, 255, 1);
   --title-shadow-color: rgba(255, 0, 112, 1);
-  --button-focus-underline: rgba(255, 0, 112, 1);
+  --button-color: rgba(255, 0, 112, 1);
 }
 
 .page.theme_dark {
