@@ -12,6 +12,7 @@
   --title-color: rgba(255, 194, 230, 1);
   --title-shadow-color: rgba(255, 0, 112, 1);
   --button-color: rgba(53, 52, 48, 1);
+  background-image: url(/images/cover-image-light.png);
 }
 
 :root.theme-light {
@@ -26,10 +27,6 @@
 
 .page.theme_light .rec {
   visibility: hidden;
-}
-
-.page.theme_light {
-  background-image: url(/images/cover-image-light.png);
 }
 
 /* Остальные стили */

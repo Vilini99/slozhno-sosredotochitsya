@@ -326,11 +326,11 @@ button:hover {
   }
 
   .section-pictures {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   .footer {
-    min-height: 983px;
+    min-height: 1024px;
     margin: 0 20px;
     display: flex;
     justify-content: center;
@@ -338,11 +338,11 @@ button:hover {
   }
 
   .footer__text {
-    padding: 0;
+    padding: 40px;
   }
 
   .footer::before {
-    bottom: 0;
+    bottom: 20px;
   }
 }
 
