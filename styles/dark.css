@@ -12,6 +12,8 @@
   --title-color: rgba(219, 0, 255, 1);
   --title-shadow-color: rgba(255, 0, 112, 1);
   --button-color: rgba(255, 0, 112, 1);
+  --content__title-color: rgba(255, 0, 112, 1);
+  --frame-color: rgba(255, 0, 112, 1);
   background-image: url(/images/cover-image-dark.png);
 }
 
@@ -23,4 +25,7 @@
   --title-color: rgba(219, 0, 255, 1);
   --title-shadow-color: rgba(255, 0, 112, 1);
   --button-color: rgba(255, 0, 112, 1);
+  --content__title-color: rgba(255, 0, 112, 1);
+  --frame-color: rgba(255, 0, 112, 1);
+  background-image: url(/images/cover-image-dark.png);
 }
