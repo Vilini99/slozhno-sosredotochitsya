@@ -348,7 +348,7 @@ button:hover {
 
 @media (width >= 1024px) {
   .header {
-    row-gap: 31px;
+    row-gap: 40px;
     padding-bottom: 70px;
     grid-template-rows: 350px 50px 194px;
     min-height: 100vh;
@@ -360,25 +360,22 @@ button:hover {
 
   .rec {
     grid-column: 3;
-    justify-self: end;
-    margin-right: 8px;
   }
 
   .header__theme-menu-list {
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 50px;
+    grid-column-gap: 37px;
   }
 
   .header__theme-menu {
     grid-column: 1;
     grid-row: 1;
     justify-self: center;
-    width: auto;
+    width: 145px;
   }
 
   .title {
-    padding-bottom: 0;
-    padding-top: 70px;
+    padding-bottom: 80px;
   }
 
   .desktop-layout {
@@ -392,12 +389,15 @@ button:hover {
 
   .sub-title {
     align-self: center;
-    padding-top: 38px;
   }
 
   .content {
     grid-column-gap: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
+  }
+
+  .attention-problems__title {
+    grid-column: 1 / 4;
   }
 
   .content__title-image {
@@ -409,7 +409,11 @@ button:hover {
   }
 
   .section-pictures {
-    margin-bottom: 23px;
+    margin-bottom: 15px;
+  }
+
+  .footer {
+    min-height: 768px;
   }
 
   .footer__text {
