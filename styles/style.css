@@ -16,7 +16,7 @@
   height: 100vh;
   min-height: 668px;
   grid-template-rows: 1fr min-content 1fr;
-  margin: 10px 10px 26px;
+  margin: 10px 10px 30px;
   row-gap: 37px;
 }
 
@@ -143,31 +143,38 @@ button:hover {
 }
 
 .content {
-  margin-bottom: 29px;
+  margin-bottom: 50px;
 }
 
 .content__title {
   font-size: 18px;
   line-height: 23px;
   color: #ff0070;
-  padding-bottom: 20px;
-  padding-top: 5px;
+  margin-bottom: 20px;
+}
+
+.content article:last-of-type .content__text {
+  padding-bottom: 0;
 }
 
 .content__subtitle {
   font-size: 18px;
-  line-height: 23px;
+  line-height: 23.4px;
   color: #000028;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .subtitle-advices {
   font-weight: 400;
 }
 
+.advices-list-title {
+  margin-bottom: 20px;
+}
+
 .content__text {
   font-size: 18px;
-  line-height: 23px;
+  line-height: 23.4px;
   padding-bottom: 20px;
 }
 
@@ -185,6 +192,7 @@ button:hover {
   display: flex;
   justify-content: center;
   font-weight: 700;
+  padding-bottom: 20px;
 }
 
 .footer {
@@ -194,7 +202,7 @@ button:hover {
   align-items: center;
   display: grid;
   justify-content: center;
-  margin: 0 10px 10px;
+  margin: 0 10px;
 }
 
 .title-decor {
