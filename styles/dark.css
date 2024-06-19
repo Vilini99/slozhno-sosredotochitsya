@@ -14,6 +14,7 @@
   --button-color: rgba(255, 0, 112, 1);
   --content__title-color: rgba(255, 0, 112, 1);
   --frame-color: rgba(255, 0, 112, 1);
+  --button-hover-border: rgba(255, 0, 112, 0.4);
   background-image: url(/images/cover-image-dark.png);
 }
 
@@ -28,6 +29,7 @@
     --button-color: rgba(255, 0, 112, 1);
     --content__title-color: rgba(255, 0, 112, 1);
     --frame-color: rgba(255, 0, 112, 1);
+    --button-hover-border: rgba(255, 0, 112, 0.4);
     background-image: url(/images/cover-image-dark.png);
   }
 }
