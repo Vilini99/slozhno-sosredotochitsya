@@ -1,5 +1,4 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
   color: var(--text-color, rgba(241, 178, 206, 1));
   font-family: var(--font, 'IBM Plex mono', monospace);
@@ -10,13 +9,22 @@
   background-size: cover;
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  min-inline-size: 375px;
+  max-inline-size: 1440px;
 }
 
 .header {
   height: 100vh;
+  min-height: 668px;
   grid-template-rows: 1fr min-content 1fr;
-  margin: 10px 10px 10px;
-  row-gap: 37px;
+  margin: 0 10px 10px;
+  padding-top: 10px;
+  row-gap: 51px;
 }
 
 .decorated-zone::after {
@@ -26,14 +34,14 @@
   width: 25px;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 10px;
   border: 1px solid var(--frame-color);
   border-left: 0;
   border-bottom: 0;
 }
 
 .main {
-  margin: 30px 10px 0;
+  margin: 40px 10px 0;
 }
 
 .decorated-zone {
@@ -82,16 +90,18 @@
   line-height: 18px;
   text-transform: lowercase;
   border: 0;
-  outline: none;
   padding: 0;
 }
 
 .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--button-color);
+}
+
+button:focus {
   outline: none;
 }
 
-.header__theme-menu-button:focus {
+button:focus-visible {
   outline: none;
 }
 
@@ -106,7 +116,6 @@ button:hover {
   line-height: 82.5%;
   color: var(--title-color);
   align-self: center;
-  margin-bottom: 20px;
 }
 
 .content__title-image {
@@ -140,7 +149,7 @@ button:hover {
   width: 25px;
   position: absolute;
   left: 0;
-  bottom: 20px;
+  bottom: 10px;
   border: 1px solid var(--frame-color);
   border-right: 0;
   border-top: 0;
@@ -150,15 +159,15 @@ button:hover {
   margin-bottom: 50px;
 }
 
+.content article:last-child {
+  padding-bottom: 0;
+}
+
 .content__title {
   font-size: 18px;
   line-height: 23px;
   color: var(--content__title-color);
   margin-bottom: 20px;
-}
-
-.content article:last-of-type .content__text {
-  padding-bottom: 0;
 }
 
 .content__subtitle {
@@ -306,9 +315,14 @@ button:hover {
 
   .header {
     row-gap: 122px;
-    margin: 20px 20px 20px;
+    margin: 0 20px 20px;
+    padding-top: 20px;
     grid-template-rows: auto 16% 31%;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .decorated-zone::after {
+    top: 20px;
   }
 
   .main {

@@ -18,7 +18,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  .page {
     --font: 'IBM Plex mono';
     --bg-color: rgba(0, 0, 40, 1);
     --text-color: rgba(241, 178, 206, 1);
